@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance Management App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Attendance Management App</h1>
+  <form id="attendance-form">
+    <input type="text" id="studentName" placeholder="Student Name" required />
+    <button type="submit">Mark Present</button>
+  </form>
+  <h2>Face Recognition</h2>
+  <video id="video" width="240" height="180" autoplay></video>
+  <button id="capture">Capture Face & Mark Attendance</button>
+  <canvas id="canvas" width="240" height="180" style="display:none"></canvas>
+  <h2>QR Code for Student</h2>
+  <input type="text" id="qrStudentName" placeholder="Student Name for QR" />
+  <button id="genQR">Generate QR</button>
+  <div id="qr"></div>
+  <h2>Attendance List</h2>
+  <ul id="attendance-list"></ul>
+  <script src="app.js"></script>
+</body>
+</html>
